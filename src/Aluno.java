@@ -2,7 +2,14 @@
 public class Aluno {
 	private String matricula;
 	private String nome;
+	private String telefone;
 
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
 	public String getMatricula() {
 		return matricula;
 	}
@@ -17,6 +24,6 @@ public class Aluno {
 	}
 	@Override
 	public String toString() {
-		return "Aluno [matricula=" + matricula + ", nome=" + nome + "]";
+		return "Aluno [matricula=" + matricula + ", nome=" + nome + ", telefone=" + telefone + "]";
 	}
 }
