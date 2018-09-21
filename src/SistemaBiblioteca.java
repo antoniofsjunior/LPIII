@@ -11,6 +11,12 @@ public class SistemaBiblioteca {
 			System.out.println("Menu");
 			System.out.println("1-Cadastrar Aluno");
 			System.out.println("2-Listar Alunos");
+			System.out.println("3-Cadastrar Livro");
+			System.out.println("4-Listar Livros");
+			System.out.println("5-Emprestar livro");
+			System.out.println("6-Listar emprestimos");
+			System.out.println("7-Devolver livro");
+			System.out.println("8-Alterar aluno");
 			System.out.print("Escolha uma opção: ");
 			op = e.nextInt();
 			switch(op){
@@ -20,6 +26,25 @@ public class SistemaBiblioteca {
 				case 2:
 					biblioteca.listarAlunos();
 					break;
+				case 3:
+					biblioteca.cadastrarLivro();
+					break;
+				case 4:
+					biblioteca.listarLivros();
+					break;
+				case 5:
+					biblioteca.emprestarLivro();
+					break;
+				case 6:
+					biblioteca.listarEmprestimos();
+					break;
+				case 7:
+					biblioteca.devolverLivro();
+					break;
+				case 8:
+					biblioteca.alterarAluno();
+					break;
+
 			}
 		}
 	}
